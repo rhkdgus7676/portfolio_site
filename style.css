@@ -5,7 +5,11 @@ body {
   font-family: 'Roboto Mono';
 }
 
-a{
+p{
+  text-decoration: none;
+}
+
+.navbar a{
   text-decoration: none;
   color: white;
 }
@@ -53,5 +57,73 @@ a{
   .navbar_right{
     flex-direction: column;
   }
+
+}
+
+.header{
+  position: relative;
+}
+
+.header img{
+  max-width: 100%;
+  z-index: 0;
+}
+
+.header h1{
+  position: absolute;
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  animation:
+    typing 2.5s steps(55, end),
+    blink-caret .5s step-end infinite;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .5em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 57% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f09a37 }
+}
+
+.skill ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.skill li{
+  /* border: 3px solid black; */
+  border-radius: 6px;
+  padding: 30px;
+  flex-basis: 30%;
+  background-color: red;
+  -webkit-transition: height 3s;
+	transition: height 3s;
+}
+
+.skill li:hover{
+  font-size: 25px;
+  width: 300px;
+}
+
+
+
+
+
+.skill p{
 
 }
