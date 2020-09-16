@@ -21,3 +21,14 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari(practiceneeded)
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function menu_click(){
+  console.log("bars");
+  let bars = document.getElementById("menu_burgerbar")
+  
+  if( bars.display === none){   
+    alert("111");
+  }else{
+    alert("222");
+  }
+}

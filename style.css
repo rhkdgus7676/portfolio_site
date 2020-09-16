@@ -50,6 +50,13 @@ p{
   vertical-align: middle;
 }
 
+#menu_burgerbar{
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  display: none;
+}
+
 .navbar_left,
 .navbar_right{
   display: flex;
@@ -69,6 +76,14 @@ p{
   .navbar_left,
   .navbar_right{
     flex-direction: column;
+  }
+
+  .navbar_right{
+    display: none;
+  }
+
+  #menu_burgerbar{
+    display: block;
   }
 }
 
