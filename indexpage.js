@@ -22,13 +22,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function menu_click(){
-  console.log("bars");
-  let bars = document.getElementById("menu_burgerbar")
-  
-  if( bars.display === none){   
-    alert("111");
-  }else{
-    alert("222");
-  }
-}
+
+const hamburger_bar = document.querySelector('.menu_burgerbar');
+const menu_drop =  document.querySelector('.navbar_right');
+
+
+hamburger_bar.addEventListener('click' , ()=>{
+  menu_drop.classList.toggle('active');
+});

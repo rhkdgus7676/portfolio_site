@@ -50,7 +50,7 @@ p{
   vertical-align: middle;
 }
 
-#menu_burgerbar{
+.menu_burgerbar{
   position: absolute;
   right: 1rem;
   top: 2.5rem;
@@ -65,6 +65,8 @@ p{
 }
 
 @media screen and (max-width: 768px){
+  
+  /* hamberger menu  */
   .navbar{
     flex-direction: column;
   }
@@ -82,9 +84,20 @@ p{
     display: none;
   }
 
-  #menu_burgerbar{
+  .menu_burgerbar{
     display: block;
   }
+
+  .navbar_right.active{
+    display: flex;
+  }
+
+  .skill_hover{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
 }
 
 .header{
@@ -119,7 +132,7 @@ p{
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #f09a37 }
+  50% { border-color: #e69334 }
 }
 
 .my_project ul{
