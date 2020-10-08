@@ -98,6 +98,24 @@ p{
     align-items: center;
   }
   
+  .flipbox_front, .flipbox_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flipbox_front {
+    background-color: transparent;
+    color: black;
+  }
+  
+  .flipbox_back {
+    background-color: transparent;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
 }
 
 .header{
